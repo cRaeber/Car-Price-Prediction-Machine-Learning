@@ -4,7 +4,7 @@ For this dataset, I will attempt to predict the price of a car given:
 *Make
 *Model
 *Year
-*Transmission Type*
+*Transmission Type
   *Manual
   *Automatic
 *Color
