@@ -40,11 +40,10 @@ From the below line and bar charts showing the relationship to a car's year and 
 ![My Image](/images/yearPrice.png)
 
 
-The remaining graphs shown below are just for expirimintation. From them we can see that color, and make have very little impact and the engine capacity has only a slight trend of increased price with increased size. 
+The remaining graphs shown below are just for expirimintation. From them we can see that color, and make have very little impact on price and that the engine capacity has only a slight correlation of increased price with increased size. 
 ![My Image](/images/colorPrice.png)
-![My Image](/images/enginePrice.png)
 ![My Image](/images/makePrice.png)
-
+![My Image](/images/enginePrice.png)
 ## Summary
 
 
