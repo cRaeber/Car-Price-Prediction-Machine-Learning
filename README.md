@@ -27,16 +27,17 @@ For this dataset, I will attempt to predict the price of a car given:
 - Time it has been listed for sale
 
 ## Plots
-![My Image](/images/pairPlot.png)
 
 For the initial relationship evaluation a pair plot was used to help visualize any correlations between attributes. From this, I determined that a cars milage and year made had the strongest correlation to its price. 
+![My Image](/images/pairPlot.png)
 
+
+Below, is the scatter plot of points related to price and milage. As we can see, there appears to be a downward trend suggesting that as a vehicles miles go up, its price goes down.
 ![My Image](/images/milesPrice.png)
-Above, is the scatter plot of points related to price and milage. As we can see, there appears to be a downward trend suggesting that as a vehicles miles go up, its price goes down. 
-
+ 
+From the below line and bar charts showing the relationship to a car's year and its price we can see a very obvious upwards trend. However, there is an unexpected uptick in the cars from years 1980-1981. I am hypothesising that there are a number of highly valued classic cars from these years found in the dataset. 
 ![My Image](/images/yearPriceBar.png)
 ![My Image](/images/yearPrice.png)
-From the above line and bar charts showing the relationship to a car's year and its price we can see a very obvious upwards trend. However, there is an unexpected uptick in the cars from years 1980-1981. I am hypothesising that there are a number of highly valued classic cars from these years found in the dataset. 
 
 
 The remaining graphs shown below are just for expirimintation. From them we can see that color, and make have very little impact and the engine capacity has only a slight trend of increased price with increased size. 
