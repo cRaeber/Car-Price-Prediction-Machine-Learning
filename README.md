@@ -2,29 +2,29 @@
 
 For this dataset, I will attempt to predict the price of a car given:
 
--Make
--Model
--Year
--Transmission Type
-  -Manual
-  -Automatic
--Color
--Miles
--Fuel Type
-  -Gasoline
-  -Diesel
-  -Electric
--Engine Capacity
-  -Cylinder volume
--Body
-  -SUV
-  -Sedan
-  -etc...
--Drivetrain
-  -Four Wheel
-  -Reer Wheel
-  -Front Wheel
--Time it has been listed for sale
+- Make
+- Model
+- Year
+- Transmission Type
+  - Manual
+  - Automatic
+- Color
+- Miles
+- Fuel Type
+  - Gasoline
+  - Diesel
+  - Electric
+- Engine Capacity
+  - Cylinder volume
+- Body
+  - SUV
+  - Sedan
+  - etc...
+- Drivetrain
+  - Four Wheel
+  - Reer Wheel
+  - Front Wheel
+- Time it has been listed for sale
 
 ![My Image](/images/pairPlot.png)
 
