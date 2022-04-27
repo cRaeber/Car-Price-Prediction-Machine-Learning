@@ -40,10 +40,13 @@ From the below line and bar charts showing the relationship to a car's year and 
 ![My Image](/images/yearPrice.png)
 
 
-The remaining graphs shown below are just for expirimintation. From them we can see that color, and make have very little impact on price and that the engine capacity has only a slight correlation of increased price with increased size. 
+The next three graphs shown below are just for expirimintation. From them we can see that color, and make have very little impact on price and that the engine capacity has only a slight correlation of increased price with increased size. 
 ![My Image](/images/colorPrice.png)
 ![My Image](/images/makePrice.png)
 ![My Image](/images/enginePrice.png)
+
+The final graph shows the counts of each of the makes. For future analysis this will be switched to counts of the car models so that I an eliminate all models that have very small occurences in the data. This will help reduce the number of models which as it stands is at 520, all of which have string representations. 
+![My Image](/images/makeCounts.png)
 
 ## Summary
 My plan going forward is to leverage the dataset found in this repository to attempt to predict the price of a car. From the findings of the initial project research (shown in the above graphs) I believe that there is a strong enough correlation between the input data and price to produce an accurate model. I hypothesize that milage and year of make will be the most important input features in this dataset. 
