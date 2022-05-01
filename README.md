@@ -26,7 +26,7 @@ For this dataset, I will attempt to predict the price of a car given:
   - Front Wheel
 - Time it has been listed for sale
 
-## Plots
+## Initial Data Analysis Plots
 
 For the initial relationship evaluation a pair plot was used to help visualize any correlations between attributes. From this, I determined that a cars milage and year made had the strongest correlation to its price. 
 ![My Image](/images/pairPlot.png)
