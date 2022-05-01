@@ -48,12 +48,55 @@ The next three graphs shown below are just for expirimintation. From them we can
 The final graph shows the counts of each of the makes. For future analysis this will be switched to counts of the car models so that I an eliminate all models that have very small occurences in the data. This will help reduce the number of models which as it stands is at 520, all of which have string representations. 
 ![My Image](/images/makeCounts.png)
 
-## Summary
+## Abstract
 My plan going forward is to leverage the dataset found in this repository to attempt to predict the price of a car. From the findings of the initial project research (shown in the above graphs) I believe that there is a strong enough correlation between the input data and price to produce an accurate model. I hypothesize that milage and year of make will be the most important input features in this dataset. 
 
-
+## Target Distributions
 ![My Image](/images/priceDistribution.png)
+From the above graph we see the distribution of the car prices. As we can see, the vast majority of the cars in the dataset are less than $15,000
+
+## NaN and String Values
+
+- In this data set the only Nan values in this are for engine capacity, a metric that was found to have a mild correlation to price, these NaN values will be replaced with the median value so as to limit their impact
+- Transmision type is label encoded as there are only two possible values.
+- All other string values were one-hot encoded. This lead to a very large number of columns but lead to the most accurate models as there are no continuous string values in the dataset and I wanted to minimize the numerical impact that comes from label encoding. 
+
+## Aggregation Functions
+The creation of aggregate columns was performed prior to string conversions as many of the useful columns were dropped during one-hot encoding. The aggregate functions used for this data set are:
+- The average price by make
+- The average price by model
+- The average price by year
+- The standard deviation by make
+
+## Comparison of Model Accuracy
+
+- Linear Regression
+  - Accuracy for Test Size: 10 : 86.8568
+  - Accuracy for Test Size: 20 : 84.7785
+  - Accuracy for Test Size: 35 : 84.5205
+  - Accuracy for Test Size: 50 : 84.8112
+  - Accuracy for Test Size: 65 : 83.657
+  - Accuracy for Test Size: 80 : 83.3336
+  - Accuracy for Test Size: 95 : 78.6692
 ![My Image](/images/LinearResiduals.png)
-![My Image](/images/LogisticResiduals.png)
+From the above Residuals Plot we can see two things. First, the model is much better at predicting the values of low priced cars. This is most likely because, as pointed out in the output distribution graph, the vast majority of data points in this data set are for cars priced below $15,000. Second, the model performs very poorly on cars worth between $20,000 and $30,000. Again this is likely because of availability of data points in this range. Another cause could be that cars in this range are "mid-tier" for this dataset and they likely have many similarities between both the more expensive and cheaper cars making it harder to predict in this range. 
+
+- SGD Regression
+  - Accuracy for Test Size: 10 : 84.1906
+  - Accuracy for Test Size: 20 : 85.1506
+  - Accuracy for Test Size: 35 : 84.4041
+  - Accuracy for Test Size: 50 : 84.3622
+  - Accuracy for Test Size: 65 : 83.5554
+  - Accuracy for Test Size: 80 : 83.072
+  - Accuracy for Test Size: 95 : 80.8419
+
+
 ![My Image](/images/AccuracyScores.png)
+As can be seen from the above accuracy scores and graph. The Linear Regression model had a higher test accuracy for 5 out of 7 test sizes. 
+
 ![My Image](/images/Predictions.png)
+From the above graph we can see how the logistic model is predicting on the test set. In a perfect model we would see all of the point aranged on a straight line indicating prediction = actual value. Unlike the linear model which performed worst on the "mid-tier" cars, this graph implies that the logistic model is worse at predicting "high-tier" expensive cars. This is shown by how spread out the datapoints are on the right side of the graph. 
+
+
+## Conclusion 
+All in all, these models both had very similar accuracies and are both viable options for this data set. However, the Linear Regression model performed slightly better so if I had to chose between the two I would go with that. 
