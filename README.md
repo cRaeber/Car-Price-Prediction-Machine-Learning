@@ -51,3 +51,9 @@ The final graph shows the counts of each of the makes. For future analysis this 
 ## Summary
 My plan going forward is to leverage the dataset found in this repository to attempt to predict the price of a car. From the findings of the initial project research (shown in the above graphs) I believe that there is a strong enough correlation between the input data and price to produce an accurate model. I hypothesize that milage and year of make will be the most important input features in this dataset. 
 
+
+![My Image](/images/priceDistribution.png)
+![My Image](/images/LinearResiduals.png)
+![My Image](/images/LogisticResiduals.png)
+![My Image](/images/AccuracyScores.png)
+![My Image](/images/Predictions.png)
