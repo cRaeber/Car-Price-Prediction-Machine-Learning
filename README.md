@@ -1,4 +1,4 @@
-# Machine-Learning-Final-Project-Raeber-Chris
+# Car-Price-Prediction
 
 For this dataset, I will attempt to predict the price of a car given:
 
